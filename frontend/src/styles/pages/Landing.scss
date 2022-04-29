@@ -1,0 +1,35 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .left {
+    padding: 100px;
+    padding-top: 20px;
+    background: $theme-primary;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .logo {
+      padding-bottom: 50px;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      transform: translateX(-14px);
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .button-wrapper {
+      padding-top: 50px;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: right;
+  }
+}

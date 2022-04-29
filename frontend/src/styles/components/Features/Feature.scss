@@ -1,0 +1,16 @@
+.feature-container {
+  display: flex;
+  align-items: center;
+
+  .align-left {
+    text-align: left;
+  }
+  .align-right {
+    text-align: right;
+  }
+
+  .icon-container {
+    font-size: 4rem;
+    padding: 20px;
+  }
+}

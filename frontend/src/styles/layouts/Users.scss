@@ -1,0 +1,10 @@
+.users-wrapper {
+  @include boxes-wrapper;
+
+  .user-wrapper {
+    @include box-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

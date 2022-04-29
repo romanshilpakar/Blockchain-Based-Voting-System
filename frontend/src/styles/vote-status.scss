@@ -1,0 +1,34 @@
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.vote-status-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  .running {
+    width: 20px;
+    height: 20px;
+    background-color: $theme-primary;
+    border-radius: 100px;
+    animation: blink 1s linear infinite;
+  }
+
+  .finished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $theme-primary;
+  }
+}

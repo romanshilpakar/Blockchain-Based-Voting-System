@@ -1,0 +1,49 @@
+.form-container {
+  @include box-shadow;
+  min-width: 400px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+
+  .input-container {
+    padding-bottom: 20px;
+
+    input {
+      border: none;
+      outline: none;
+      background: $theme-gray;
+      padding: 10px;
+      border-radius: 5px;
+      width: 96%;
+      font-family: "Josefin Sans", sans-serif;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+  }
+
+  hr {
+    margin: 30px;
+    border: none;
+    outline: none;
+    border-top: 2px solid $theme-gray;
+  }
+
+  .form-info-text {
+    text-align: center;
+    color: $theme-primary;
+    margin: 30px;
+  }
+}
+
+.form-error-text {
+  color: $theme-secondary;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+}

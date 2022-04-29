@@ -1,0 +1,25 @@
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.waiting-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cog {
+    animation: rotate360 3s linear infinite;
+
+    * {
+      font-size: 20rem;
+      color: $theme-primary;
+      padding-top: 18px;
+      margin: 0;
+    }
+  }
+}

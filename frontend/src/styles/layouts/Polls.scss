@@ -1,0 +1,15 @@
+.polls-wrapper {
+  @include boxes-wrapper;
+
+  .poll-wrapper {
+    @include box-wrapper;
+
+    .candidates-wrapper {
+      @include inner-box-wrapper;
+
+      .candidate-name {
+        @include inner-box-name;
+      }
+    }
+  }
+}

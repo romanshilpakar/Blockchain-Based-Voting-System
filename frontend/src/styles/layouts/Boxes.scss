@@ -1,0 +1,30 @@
+@mixin boxes-wrapper {
+  padding-top: 100px;
+}
+
+@mixin box-wrapper {
+  @include box-shadow;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin inner-box-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+@mixin inner-box-name {
+  padding: 10px 20px 10px 20px;
+  margin-right: 10px;
+  background-color: $theme-gray;
+  border-radius: 100px;
+}

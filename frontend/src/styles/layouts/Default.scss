@@ -1,0 +1,63 @@
+.default-container {
+  min-height: 80vh;
+  display: flex;
+
+  .default-sidebar-container {
+    width: 100px;
+
+    .hamburger {
+      font-size: 2rem;
+      color: $theme-black;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .default-sidebar {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 30vw;
+      transition: 0.3s;
+      background-color: $theme-primary;
+      color: white;
+      box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
+
+      .hamburger {
+        font-size: 2rem;
+        color: white;
+      }
+
+      .default-sidebar-link {
+        padding: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .default-content {
+    flex: 1;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.display {
+  // visibility: visible;
+  // opacity: 1;
+  transform: translateX(0);
+}
+
+.hide {
+  // visibility: hidden;
+  // opacity: 0;
+  transform: translateX(-800px);
+}
+
+.active {
+  background-color: $theme-secondary;
+}

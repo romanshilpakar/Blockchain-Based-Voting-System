@@ -1,0 +1,14 @@
+.polls-container {
+  @include box-shadow;
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .votes-wrapper {
+    padding-top: 50px;
+  }
+}

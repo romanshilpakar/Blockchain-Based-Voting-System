@@ -1,0 +1,44 @@
+.bars-container {
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+
+  .bar-wrapper {
+    width: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: $theme-gray;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.buttons-wrapper {
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+
+  .button-wrapper {
+    margin-top: 20px;
+    // width: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.names-wrapper {
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+
+  .name-wrapper {
+    padding-top: 20px;
+    width: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
